@@ -1,0 +1,13 @@
+#!/bin/bash
+reset
+set term png truecolor
+set title "CS 296 Lab 05 Plot 2"
+set output "../plots/g12_plot02.png"
+set xlabel "Iteration Value"
+set ylabel "Averaged step time over all reruns"
+set grid
+set boxwidth 0.8 relative
+set datafile separator ","
+set style fill transparent solid 0.5 noborder
+set yrange [0:3]
+plot "g12_lab05data_01.csv" using 1:3 smooth unique lc rgb"green" title "Step time for iteration values", "g12_lab05data_01.csv" using 1:4 smooth unique with lines lc rgb"blue" title "Collision time for iteration values","g12_lab05data_01.csv" using 1:5 smooth unique title "Velocity update time for iteration values", "g12_lab05data_01.csv" using 1:6 smooth unique title "Position update time for iteration values", "g12_lab05data_01.csv" using 1:($4+$5+$6) smooth unique lc rgb"red" title "Total time for iteration values (X)"

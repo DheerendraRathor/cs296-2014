@@ -1,0 +1,12 @@
+#!/bin/bash
+set datafile separator ','
+set term png truecolor
+set title "CS 296 Lab 05 Plot 4"
+set boxwidth 0.015
+set output "../plots/g12_plot04.png"
+set xlabel "Time steps for iteration value 33" 
+set ylabel "Frequency" 
+binwidth = 0.02
+bin(x,width)=width*floor(x/width) + binwidth/2.0
+set style fill transparent solid 0.5 noborder
+plot "<(sed -n '4951,5100p' g12_lab05data_02.csv)" using (bin($3,binwidth)):(1.0) smooth freq with boxes title 'single iteration', "<(sed -n '4951,5100p' g12_lab05data_02.csv)" using (bin($3,binwidth)):(1) s cumul title 'smooth cumulative'

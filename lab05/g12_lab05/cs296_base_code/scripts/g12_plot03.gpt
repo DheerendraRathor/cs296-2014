@@ -1,0 +1,13 @@
+#!/bin/bash
+set datafile separator ','
+set term png truecolor
+set title "CS 296 Lab 05 Plot 3"
+set output '../plots/g12_plot03.png'
+set xlabel "Iteration value"
+set ylabel "Mean value and Error bar"
+set grid
+set boxwidth 0.5
+set style fill solid
+`bash plot03_helper.sh`
+plot './temp.csv' using 1:2:3 with errorbars title "Errorbars", './temp.csv' using 1:2 with lines lc rgb"blue" title "Mean line"
+`rm -rf temp.csv`

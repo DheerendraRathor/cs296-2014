@@ -1,0 +1,23 @@
+#!/bin/bash
+reset
+set term png truecolor
+set title "CS 296 Lab 05 Plot 1"
+set xlabel "Iteration Value"
+set ylabel "Averaged step time and loop time over all reruns"
+set grid
+set boxwidth 0.1 relative
+set datafile separator ','
+set style fill transparent solid 0.5 noborder
+set output "| head -n -2 >first.temp"
+set table
+plot 'g12_lab05data_01.csv' using 1:7 smooth unique with boxes
+unset table
+set datafile separator ' '
+set output "../plots/g12_plot01.png"
+plot 'first.temp' using 1:2
+set datafile separator ','
+set output "../plots/g12_plot01.png"
+Minimum = GPVAL_DATA_Y_MIN
+Maximum = GPVAL_DATA_Y_MAX
+`rm -rf first.temp`
+plot 'g12_lab05data_01.csv' using 1:3 smooth unique with boxes lc rgb"green" title 'Averaged step time', 'g12_lab05data_01.csv' using 1:7 smooth unique lc rgb"blue" title 'Averaged loop time',Minimum lc rgb"red", Maximum

@@ -1,0 +1,17 @@
+#!/bin/bash
+reset
+set term png truecolor
+set title "CS 296 Lab 05 Plot 5"
+set output "../plots/g12_plot05.png"
+set xlabel "Iteration Value"
+set ylabel "Step time averaged over reruns"
+set grid
+set boxwidth 0.5 relative
+set datafile separator ","
+set style fill transparent solid 0.5 noborder
+f(x)=m*x+b
+g(x)=p*x+q
+fit f(x) './g12_lab05data_random.csv' using 1:3 via m,b
+fit g(x) './g12_lab05data_02.csv' using 1:3 via p,q
+plot "g12_lab05data_random.csv" using 1:3 smooth unique with points lc rgb"red" title "time(Y) for iteration values(X) of random data", f(x) title "Best Filt Line of random data","g12_lab05data_02.csv" using 1:3 smooth unique with points lc rgb"blue" title "time(Y) for iteration values(X) of normal data", g(x) title "Best Filt Line of normal data"
+`rm -rf fit.log`
