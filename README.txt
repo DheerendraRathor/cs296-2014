@@ -9,6 +9,8 @@ Contributor:
 
 This repository contains folders for all labs named accordingly. For further details please refer to indivisual
 README.txt in each lab folder.
+Box2D is not installed in any of the lab work. For installing Box2D go to cs296_base_code/exteranl/src and follow the
+instructions present there in cs296_README.txt
 
 Added following assingments:
 
