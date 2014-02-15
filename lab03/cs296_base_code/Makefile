@@ -138,7 +138,7 @@ clean:
 
 distclean:clean
 	@$(ECHO) "Now Uninstalling Box2D"
-	@rm -rf $(INCLUDE)/* $(EXTLIB)/* $(EXTSRC)/Box2D
+	@rm -rf $(INCLUDE)/* $(EXTLIB)/* $(EXTSRC)/Box2D $(DOCDIR)/html
 	@$(ECHO) "Done"
 
 doc:
