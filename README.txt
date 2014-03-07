@@ -14,10 +14,17 @@ instructions present there in cs296_README.txt
 
 Added following assingments:
 
-1. lab02 : http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_02.shtml
+1. lab02 : MAKEFILES, COMPILATION AND LINKING
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_02.shtml
 
-2. lab03 : http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_03.shtml
+2. lab03 : READING CODE AND DOCUMENTATION WITH DOXYGEN, REPORT WRITING WITH LATEX
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_03.shtml
 
-3. lab04 : http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_04.shtml
+3. lab04 : DIFF AND PATCH, SOURCE VERSION CONTROL USING SVN AND GIT
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_04.shtml
 
-4. lab05 : http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_05.shtml
+4. lab05 : BASH SHELL SCRIPTING AND GNUPLOT
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_05.shtml
+
+5. lab06 : MORE SHELL SCRIPTING AND GENERAL LINUX UNDERSTANDING
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_06.shtml
