@@ -149,8 +149,8 @@ doc:
 	@$(ECHO) "Done"
 	
 report: setup exe
-	@mkdir plots; \
-	mkdir data; \
+	@mkdir -p plots; \
+	mkdir -p data; \
 	cd scripts; \
 	python3 g12_gen_csv.py; \
 	python3 g12_gen_plots.py; \
