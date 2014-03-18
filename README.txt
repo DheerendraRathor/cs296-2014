@@ -28,3 +28,9 @@ http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_05.shtml
 
 5. lab06 : MORE SHELL SCRIPTING AND GENERAL LINUX UNDERSTANDING
 http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_06.shtml
+
+6. lab07 : TIMING AND PROFILING CODE
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_07.shtml
+
+7. lab08 : PYTHON PROGRAMMING
+http://www.cse.iitb.ac.in/~paragc/teaching/2014/cs296/labs/lab_08.shtml
